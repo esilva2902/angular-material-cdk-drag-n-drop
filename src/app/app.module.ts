@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { BasicDraggingComponent } from './basic-dragging/basic-dragging.component';
 import { HorizontalSortingComponent } from './horizontal-sorting/horizontal-sorting.component';
 import { OneAxisDraggingComponent } from './one-axis-dragging/one-axis-dragging.component';
+import { ConnectedListsComponent } from './connected-lists/connected-lists.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BasicDraggingComponent,
     HorizontalSortingComponent,
-    OneAxisDraggingComponent
+    OneAxisDraggingComponent,
+    ConnectedListsComponent
   ],
   imports: [
     BrowserModule,
