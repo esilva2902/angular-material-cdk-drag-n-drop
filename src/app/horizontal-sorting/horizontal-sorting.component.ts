@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
+import { CdkDragDrop, moveItemInArray, CdkDragMove } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'horizontal-sorting',
@@ -22,7 +22,11 @@ export class HorizontalSortingComponent implements OnInit {
   }
 
   drop(event: CdkDragDrop<string[]>) {
-    console.log(`event.item: `, event.item);
+    // console.log(`event.item: `, event.item);
     moveItemInArray(this.timePeriods, event.previousIndex, event.currentIndex);
+  }
+
+  onMove(event:  CdkDragMove) {
+    console.log(`onMove event: `, event);
   }
 }

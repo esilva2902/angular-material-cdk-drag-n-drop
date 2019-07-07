@@ -7,12 +7,14 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { AppComponent } from './app.component';
 import { BasicDraggingComponent } from './basic-dragging/basic-dragging.component';
 import { HorizontalSortingComponent } from './horizontal-sorting/horizontal-sorting.component';
+import { OneAxisDraggingComponent } from './one-axis-dragging/one-axis-dragging.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BasicDraggingComponent,
-    HorizontalSortingComponent
+    HorizontalSortingComponent,
+    OneAxisDraggingComponent
   ],
   imports: [
     BrowserModule,
