@@ -1,0 +1,92 @@
+<div cdkDropListGroup>
+    <div class="example-container">
+      <h2>First</h2>
+  
+      <div
+        cdkDropList
+        [cdkDropListData]="first"
+        class="example-list"
+
+        cdkDropListSortingDisabled
+
+        (cdkDropListEntered)="enter($event, 'First')"
+        (cdkDropListExited)="exit($event, 'First')"
+  
+        (cdkDropListDropped)="drop($event, 'First')">
+  
+        <div class="example-box" *ngFor="let item of first" 
+            cdkDrag
+            [cdkDragData]="item">{{ item.text }}
+        </div>
+
+      </div>
+    </div>
+  
+    <div class="example-container">
+      <h2>Second</h2>
+  
+      <div
+        cdkDropList
+        [cdkDropListData]="second"
+        class="example-list"
+
+        cdkDropListSortingDisabled
+
+        (cdkDropListEntered)="enter($event, 'Second')"
+        (cdkDropListExited)="exit($event, 'Second')"
+  
+        (cdkDropListDropped)="drop($event, 'Second')">
+  
+        <div class="example-box" *ngFor="let item of second" 
+            cdkDrag
+            [cdkDragData]="item">{{ item.text }}
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="example-container">
+      <h2>Third</h2>
+  
+      <div
+        cdkDropList
+        [cdkDropListData]="third"
+        class="example-list"
+
+        cdkDropListSortingDisabled
+
+        (cdkDropListEntered)="enter($event, 'Third')"
+        (cdkDropListExited)="exit($event, 'Third')"
+  
+        (cdkDropListDropped)="drop($event, 'Third')">
+        
+        <div class="example-box" *ngFor="let item of third" 
+            cdkDrag
+            [cdkDragData]="item">{{ item.text }}
+        </div>
+  
+      </div>
+    </div>
+
+    <div class="example-container">
+      <h2>Fourth</h2>
+  
+      <div
+        cdkDropList
+        [cdkDropListData]="fourth"
+        class="example-list"
+        (cdkDropListEntered)="enter($event, 'Fourth')"
+        (cdkDropListExited)="exit($event, 'Fourth')"
+  
+        (cdkDropListDropped)="drop($event, 'Fourth')">
+        
+        <div class="example-box" *ngFor="let item of fourth" 
+            cdkDrag
+            [cdkDragData]="item">{{ item.text }}
+        </div>
+  
+      </div>
+    </div>
+  
+  </div>
+  

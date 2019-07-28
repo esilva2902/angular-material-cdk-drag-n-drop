@@ -10,6 +10,7 @@ import { HorizontalSortingComponent } from './horizontal-sorting/horizontal-sort
 import { OneAxisDraggingComponent } from './one-axis-dragging/one-axis-dragging.component';
 import { ConnectedListsComponent } from './connected-lists/connected-lists.component';
 import { DropGroupsComponent } from './drop-groups/drop-groups.component';
+import { SwapItemsComponent } from './swap-items/swap-items.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DropGroupsComponent } from './drop-groups/drop-groups.component';
     HorizontalSortingComponent,
     OneAxisDraggingComponent,
     ConnectedListsComponent,
-    DropGroupsComponent
+    DropGroupsComponent,
+    SwapItemsComponent
   ],
   imports: [
     BrowserModule,
